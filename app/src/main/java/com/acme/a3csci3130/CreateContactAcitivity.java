@@ -12,6 +12,12 @@ public class CreateContactAcitivity extends Activity {
     private EditText nameField, businessField, pbusinessField, addressField, provinceField;
     private MyApplicationData appState;
 
+    /**
+     *
+     * @param savedInstanceState
+     * Method to create the button
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +33,12 @@ public class CreateContactAcitivity extends Activity {
         provinceField = (EditText) findViewById(R.id.province);
 
     }
+
+    /**
+     *
+     * @param v
+     * Method to create a new contact by sending the data to Firebase : Unique ID, Business Number, Name, Primary Business, Address, Province
+     */
 
     public void submitInfoButton(View v) {
         //each entry needs a unique ID
